@@ -1,0 +1,70 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "name",
+    "fieldTitle": "测试",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "validations": "required",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "date_field",
+    "fieldTitle": "日期字段",
+    "dbType": "timestamp",
+    "htmlType": "date",
+    "validations": "required|date",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "number_field",
+    "fieldTitle": "数字字段",
+    "dbType": "integer",
+    "htmlType": "number",
+    "inSearch": true,
+    "inForm": true
+  },
+  {
+    "name": "float_field",
+    "fieldTitle": "浮点数",
+    "dbType": "float,8,2:nullable"
+  },
+  {
+    "name": "radio_group",
+    "fieldTitle": "单选框",
+    "dbType": "boolean:default,0",
+    "htmlType": "radio",
+    "inSearch": true,
+    "inForm": true,
+    "fillable": false
+  },
+  {
+    "name": "check_boxes",
+    "fieldTitle": "复选框",
+    "dbType": "string",
+    "htmlType": "checkbox",
+    "inSearch": true,
+    "inForm": true,
+    "fillable": false
+  },
+  {
+    "name": "select_field",
+    "fieldTitle": "下拉框字段",
+    "dbType": "tinyInteger:unsigned",
+    "htmlType": "select"
+  },
+  {
+    "name": "desc",
+    "fieldTitle": "描述",
+    "dbType": "text:nullable",
+    "htmlType": "textarea"
+  }
+]

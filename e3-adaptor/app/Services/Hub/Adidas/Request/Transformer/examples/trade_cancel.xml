@@ -1,0 +1,10 @@
+<Order Action="MODIFY" DocumentType="0001" EnterpriseCode="EMC1" OrderNo="T7GXSX8GY62" CustomerPONo="714462209340192864">
+    <OrderLines>
+        <OrderLine PrimeLineNo="1" Action="CANCEL" ModificationReasonCode="B03" QuantityToCancel="1">
+            <Extn ExtnCustomerLinePONO="714462209341192864"/>
+        </OrderLine>
+        <OrderLine PrimeLineNo="2" Action="CANCEL" ModificationReasonCode="B03" QuantityToCancel="1">
+            <Extn ExtnCustomerLinePONO="714462209342192864"/>
+        </OrderLine>
+    </OrderLines>
+</Order>

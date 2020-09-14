@@ -1,0 +1,1 @@
+          <el-input-number v-model="dialogData.$FIELD_NAME$"$VALIDATION_RULES$ :placeholder="translate('$FIELD_NAME$')" name="$FIELD_NAME$"/>

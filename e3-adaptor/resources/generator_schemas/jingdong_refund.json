@@ -1,0 +1,82 @@
+[
+  {
+    "name": "service_id",
+    "fieldTitle": "退单Id",
+    "dbType": "unsignedBigInteger",
+    "primary": true
+  },
+  {
+    "name": "vender_id",
+    "fieldTitle": "商家编号",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "order_id",
+    "fieldTitle": "交易号",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "service_status",
+    "fieldTitle": "状态",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "customer_expect",
+    "fieldTitle": "客户期望",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "apply_time",
+    "fieldTitle": "申请时间",
+    "dbType": "date",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "update_date",
+    "fieldTitle": "最后修改时间",
+    "dbType": "date",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "origin_content",
+    "fieldTitle": "原始报文",
+    "dbType": "mediumText",
+    "htmlType": "text"
+  },
+  {
+    "name": "origin_created",
+    "fieldTitle": "报文创建时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "date",
+    "inSearch": true
+  },
+  {
+    "name": "origin_modified",
+    "fieldTitle": "报文更新时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "date"
+  },
+  {
+    "name": "sync_status",    "fieldTitle": "转入状态",
+    "dbType": "unsignedTinyInteger:default,0:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "sys_version",
+    "fieldTitle": "版本",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text"
+  }
+]

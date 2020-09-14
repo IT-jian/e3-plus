@@ -1,0 +1,34 @@
+[
+  {
+    "name": "refund_id",
+    "fieldTitle": "退单号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "primary": true
+  },
+  {
+    "name": "outer_iid",
+    "fieldTitle": "商家外部编码",
+    "dbType": "string,32",
+    "htmlType": "text"
+  },
+  {
+    "name": "num",
+    "fieldTitle": "数量",
+    "dbType": "unsignedInteger",
+    "htmlType": "text"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "name": "refund_id",
+    "fieldTitle": "退单号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "primary": true
+  },
+  {
+    "name": "tid",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "oid",
+    "fieldTitle": "子交易号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "shop_code",
+    "fieldTitle": "商店编码",
+    "dbType": "string,20",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "status",
+    "fieldTitle": "退单状态",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "refund_phase",
+    "fieldTitle": "退单阶段",
+    "dbType": "string,10",
+    "htmlType": "text"
+  },
+  {
+    "name": "refund_version",
+    "fieldTitle": "版本号",
+    "dbType": "string,11",
+    "htmlType": "text"
+  },
+  {
+    "name": "refund_fee",
+    "fieldTitle": "退款金额",
+    "dbType": "decimal,8,2",
+    "htmlType": "text"
+  },
+  {
+    "name": "company_name",
+    "fieldTitle": "退货物流公司",
+    "dbType": "string,32",
+    "htmlType": "text"
+  },
+  {
+    "name": "sid",
+    "fieldTitle": "退货运单号",
+    "dbType": "string,32",
+    "htmlType": "text"
+  },
+  {
+    "name": "created",
+    "fieldTitle": "下单时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime",
+    "inSearch": true
+  },
+  {
+    "name": "modified",
+    "fieldTitle": "淘宝更新时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+
+]

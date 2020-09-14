@@ -1,0 +1,48 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "outer_sku_id",
+    "fieldTitle": "Outer Sku Id",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "validations": "required",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "item_id",
+    "fieldTitle": "Item Id",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "validations": "required",
+    "inSearch": true,
+    "inForm": true
+  },
+  {
+    "name": "size",
+    "fieldTitle": "Size",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "validations": "required",
+    "inSearch": true,
+    "inForm": true
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "创建时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

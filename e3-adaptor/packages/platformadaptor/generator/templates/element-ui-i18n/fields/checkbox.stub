@@ -1,0 +1,4 @@
+          <el-checkbox-group v-model="dialogData.$FIELD_NAME$"$VALIDATION_RULES$>
+            <el-checkbox label="1" name="$FIELD_NAME$">复选框A</el-checkbox>
+            <el-checkbox label="2" name="$FIELD_NAME$">复选框B</el-checkbox>
+          </el-checkbox-group>

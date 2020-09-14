@@ -1,0 +1,67 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "unsignedInteger",
+    "primary": true,
+    "inSearch": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "平台",
+    "dbType": "string,10",
+    "validations": "required",
+    "htmlType": "text",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "type",
+    "fieldTitle": "类型",
+    "dbType": "string,50",
+    "validations": "required",
+    "htmlType": "text",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "source_name",
+    "fieldTitle": "平台原因",
+    "validations": "required|max:255",
+    "dbType": "string,255",
+    "inForm": true,
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "map_name",
+    "fieldTitle": "映射原因",
+    "inForm": true,
+    "dbType": "string,255:nullable",
+    "validations": "max:255",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "remark",
+    "fieldTitle": "备注",
+    "inForm": true,
+    "dbType": "string,255:nullable",
+    "htmlType": "textarea",
+    "inSearch": true
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

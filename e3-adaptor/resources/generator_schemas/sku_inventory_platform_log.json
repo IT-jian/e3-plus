@@ -1,0 +1,56 @@
+[
+    {
+        "name": "id",
+        "fieldTitle": "ID",
+        "dbType": "unsignedBigInteger,true",
+        "primary": true
+    },
+    {
+        "name": "num_iid",
+        "fieldTitle": "商品ID",
+        "dbType": "unsignedBigInteger",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "shop_code",
+        "fieldTitle": "商店编码",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "inSearch": true
+    },
+    {
+        "name": "batch_version",
+        "fieldTitle": "请求版本",
+        "dbType": "unsignedBigInteger",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "request",
+        "fieldTitle": "请求内容",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "response",
+        "fieldTitle": "响应内容",
+        "dbType": "text",
+        "htmlType": "text"
+    },
+    {
+        "name": "start_at",
+        "fieldTitle": "请求时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "datetime",
+        "inSearch": true
+    },
+    {
+        "name": "end_at",
+        "fieldTitle": "响应时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "datetime"
+    }
+]

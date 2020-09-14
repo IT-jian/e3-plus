@@ -1,0 +1,75 @@
+[
+  {
+    "name": "tid",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "primary": true,
+    "inSearch": true
+  },
+  {
+    "name": "oid",
+    "fieldTitle": "子订单号",
+    "dbType": "unsignedBigInteger:nullable",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "num_iid",
+    "fieldTitle": "商品数字ID",
+    "dbType": "string,50:nullable",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "outer_iid",
+    "fieldTitle": "商家外部编码",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "outer_sku_id",
+    "fieldTitle": "商家SKU ID",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "num",
+    "fieldTitle": "数量",
+    "dbType": "integer",
+    "htmlType": "text"
+  },
+  {
+    "name": "total_fee",
+    "fieldTitle": "商品金额",
+    "dbType": "decimal,8,2:nullable"
+  },
+  {
+    "name": "discount_fee",
+    "fieldTitle": "优惠金额",
+    "dbType": "decimal,8,2:nullable"
+  },
+  {
+    "name": "adjust_fee",
+    "fieldTitle": "手工调整金额",
+    "dbType": "decimal,8,2:nullable"
+  },
+  {
+    "name": "payment",
+    "fieldTitle": "支付金额",
+    "dbType": "decimal,8,2:nullable"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

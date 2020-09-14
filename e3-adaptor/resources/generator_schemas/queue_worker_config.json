@@ -1,0 +1,67 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "code",
+    "fieldTitle": "编码",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "name",
+    "fieldTitle": "名称",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "process_number",
+    "fieldTitle": "并发数量",
+    "dbType": "integer",
+    "inForm": true,
+    "htmlType": "text"
+  },
+  {
+    "name": "command",
+    "fieldTitle": "命令",
+    "dbType": "string",
+    "inForm": true,
+    "htmlType": "string"
+  },
+  {
+    "name": "user",
+    "fieldTitle": "用户",
+    "dbType": "string",
+    "inForm": true,
+    "htmlType": "string"
+  },
+  {
+    "name": "status",
+    "fieldTitle": "状态",
+    "dbType": "integer",
+    "htmlType": "text",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "创建时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

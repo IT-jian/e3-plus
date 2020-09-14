@@ -1,0 +1,48 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedInteger",
+    "primary": true,
+    "inSearch": true
+  },
+  {
+    "name": "promotion_name",
+    "fieldTitle": "优惠名称",
+    "dbType": "string,255:nullable",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "discount_fee",
+    "fieldTitle": "优惠金额",
+    "dbType": "decimal,8,2:nullable",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "gift_item_id",
+    "fieldTitle": "赠品宝贝ID",
+    "dbType": "string,32:nullable",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "gift_item_num",
+    "fieldTitle": "赠品数量",
+    "dbType": "integer:nullable:default,0",
+    "htmlType": "text"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

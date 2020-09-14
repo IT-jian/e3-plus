@@ -1,0 +1,75 @@
+[
+  {
+    "name": "order_id",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "primary": true
+  },
+  {
+    "name": "vender_id",
+    "fieldTitle": "商家编号",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "state",
+    "fieldTitle": "订单状态",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "order_type",
+    "fieldTitle": "订单类型",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "created",
+    "fieldTitle": "创建时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "modified",
+    "fieldTitle": "更新时间",
+    "dbType": "datetime",
+    "htmlType": "date"
+  },
+  {
+    "name": "origin_content",
+    "fieldTitle": "原始报文",
+    "dbType": "mediumText",
+    "htmlType": "text"
+  },
+  {
+    "name": "origin_created",
+    "fieldTitle": "报文创建时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "date",
+    "inSearch": true
+  },
+  {
+    "name": "origin_modified",
+    "fieldTitle": "报文更新时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "date"
+  },
+  {
+    "name": "sync_status",
+    "fieldTitle": "报文更新时间",
+    "dbType": "unsignedTinyInteger",
+    "htmlType": "text"
+  },
+  {
+    "name": "version",
+    "fieldTitle": "版本",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text"
+  }
+]

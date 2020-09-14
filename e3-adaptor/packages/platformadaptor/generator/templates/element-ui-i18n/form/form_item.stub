@@ -1,0 +1,3 @@
+        <el-form-item :label="translate('$FIELD_NAME$')"$VALIDATION_ERRORS$>
+$FORM_ITEM_CONTENT$
+        </el-form-item>

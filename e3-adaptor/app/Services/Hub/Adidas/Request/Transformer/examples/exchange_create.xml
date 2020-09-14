@@ -1,0 +1,39 @@
+<createreturnorder>
+    <Order EnterpriseCode="EMC1" DocumentType="0001" OrderNo="T7GXSX8GY62" EntryType="TMALL" CustomerPONo="565260708539080096">
+        <Extn ExtnStatus="WAIT_SELLER_AGREE"  ExtnRefundId="10013866984581399" ExtnSCAC="SF" ExtnTrackingNo="1901977334041"/>
+        <OrderLines>
+            <OrderLine  PrimeLineNo="1" Quantity="1" ReturnReasonCode="128" ReturnReasonText="7�������ɻ���" >
+                <Extn ExtnCustomerLinePONo="4444412341245129" ExtnCustItemID="569666569230" />
+                <Item ItemID="" />
+            </OrderLine>
+        </OrderLines>
+    </Order>
+    <Order EnteredBy="Marketplace" EntryType="TMALL" OrderPurpose="EXCHANGE" OrderDate="2019-11-06T19:32:02+8:00">
+        <Extn ExtnDisputeId="7516518453614496" />
+        <HeaderCharges/>
+        <PersonInfoBillTo/>
+        <HeaderTaxes/>
+        <OrderLines>
+            <OrderLine LineType="inline" OrderedQty="1" PrimeLineNo="1">
+                <Extn ExtnArticleNumber="" ExtnColor="" ExtnDivisionCode="" ExtnEAN="569666569231" ExtnModelNo="" ExtnSizeCode="" />
+                <Item ItemDesc="" ItemID="" ItemShortDesc="" ProductClass="NEW" ReturnItemID="569666569230" UPCCode="" UnitOfMeasure="PIECE" />
+                <LineCharges>
+                    <LineCharge ChargeCategory="" ChargeName="" ChargePerLine="" ChargePerUnit="" Reference="">
+                        <Extn ExtnCampaignId="" />
+                    </LineCharge>
+                </LineCharges>
+                <LineTaxes>
+                    <LineTax ChargeCategory="" ChargeName="" Reference1="" Tax="" TaxName="" TaxPercentage="" />
+                </LineTaxes>
+                <References>
+                    <Reference Name="" Value="" />
+                </References>
+                <LinePriceInfo ListPrice="" UnitPrice="" />
+                <PersonInfoShipTo/>
+            </OrderLine>
+        </OrderLines>
+        <PersonInfoShipTo/>
+        <PaymentMethods/>
+        <PriceInfo/>
+    </Order>
+</createreturnorder>

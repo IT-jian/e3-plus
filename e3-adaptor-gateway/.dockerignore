@@ -1,0 +1,9 @@
+# docker build ignore files
+
+.git
+.dockerignore
+.editorconfig
+.gitignore
+.styleci.yml
+Dockerfile
+README.md

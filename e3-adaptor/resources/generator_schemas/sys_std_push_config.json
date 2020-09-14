@@ -1,0 +1,72 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "method",
+    "fieldTitle": "类型",
+    "dbType": "string,50",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "stop_push",
+    "fieldTitle": "停止推送",
+    "dbType": "unsignedTinyInteger:default,1",
+    "htmlType": "text",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "request_once",
+    "fieldTitle": "仅推一次",
+    "dbType": "unsignedTinyInteger:default,1",
+    "htmlType": "text",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "try_times",
+    "fieldTitle": "尝试轮次",
+    "dbType": "unsignedInteger:nullable",
+    "htmlType": "text",
+    "inForm": true
+  },
+  {
+    "name": "tries",
+    "fieldTitle": "尝试次数",
+    "dbType": "unsignedInteger:nullable",
+    "htmlType": "text",
+    "inForm": true
+  },
+  {
+    "name": "retry_after",
+    "fieldTitle": "轮次间隔",
+    "dbType": "unsignedInteger:nullable",
+    "htmlType": "text",
+    "inForm": true
+  },
+  {
+    "name": "delay",
+    "fieldTitle": "尝试间隔",
+    "dbType": "unsignedInteger:nullable",
+    "htmlType": "text",
+    "inForm": true
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "创建时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

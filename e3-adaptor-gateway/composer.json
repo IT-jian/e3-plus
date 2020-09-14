@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nicolab/php-ftp-client": "^1.5.3",
+        "doctrine/cache": "^1.10"
+    }
+}

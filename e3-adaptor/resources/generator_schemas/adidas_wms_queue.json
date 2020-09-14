@@ -1,0 +1,49 @@
+[
+    {
+        "name": "id",
+        "fieldTitle": "ID",
+        "dbType": "integer,true",
+        "primary": true
+    },
+    {
+        "name": "bis_id",
+        "fieldTitle": "业务ID",
+        "dbType": "string,50",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "wms",
+        "fieldTitle": "wms名称",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "method",
+        "fieldTitle": "类型",
+        "dbType": "string,50",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "status",
+        "fieldTitle": "状态",
+        "dbType": "unsignedTinyInteger,3",
+        "htmlType": "text",
+        "inSearch": true
+    },
+    {
+        "name": "created_at",
+        "fieldTitle": "创建时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "datetime"
+    },
+    {
+        "name": "updated_at",
+        "fieldTitle": "更新时间",
+        "dbType": "timestamp:nullable:useCurrent",
+        "htmlType": "datetime"
+    }
+]

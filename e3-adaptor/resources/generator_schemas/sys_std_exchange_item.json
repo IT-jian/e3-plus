@@ -1,0 +1,72 @@
+[
+  {
+    "name": "dispute_id",
+    "fieldTitle": "换货单号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "primary": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "来源平台",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "goods_status",
+    "fieldTitle": "商品状态",
+    "dbType": "string,20:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "bought_sku",
+    "fieldTitle": "购买SKU",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "exchange_sku",
+    "fieldTitle": "换货SKU",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "num",
+    "fieldTitle": "换货数量",
+    "dbType": "unsignedInteger",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "reason",
+    "fieldTitle": "换货原因",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "desc",
+    "fieldTitle": "原因说明",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+
+]

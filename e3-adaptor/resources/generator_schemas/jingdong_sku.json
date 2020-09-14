@@ -1,0 +1,111 @@
+[
+    {
+        "name": "sku_id",
+        "fieldTitle": "平台sku_id",
+        "dbType": "unsignedBigInteger",
+        "primary": true
+    },
+    {
+        "name": "vender_id",
+        "fieldTitle": "平台店铺",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "shop_code",
+        "fieldTitle": "店铺",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "sku_name",
+        "fieldTitle": "sku名称",
+        "dbType": "string,255",
+        "htmlType": "text"
+    },
+    {
+        "name": "outer_id",
+        "fieldTitle": "商家编号",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "barcode",
+        "fieldTitle": "条码",
+        "dbType": "string,50",
+        "htmlType": "text"
+    },
+    {
+        "name": "ware_id",
+        "fieldTitle": "平台货号",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "ware_title",
+        "fieldTitle": "商品名称",
+        "dbType": "string,255",
+        "htmlType": "text"
+    },
+    {
+        "name": "category_id",
+        "fieldTitle": "三级类目id",
+        "dbType": "string,255",
+        "htmlType": "text"
+    },
+    {
+        "name": "status",
+        "fieldTitle": "商品状态",
+        "dbType": "tinyint",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "jd_price",
+        "fieldTitle": "京东价",
+        "dbType": "decimal,8,2:nullable",
+        "htmlType": "text"
+    },
+    {
+        "name": "origin_content",
+        "fieldTitle": "原始报文",
+        "dbType": "json:nullable",
+        "htmlType": "text",
+        "inIndex": true
+    },
+    {
+        "name": "created",
+        "fieldTitle": "平台创建时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "date",
+        "inSearch": true
+    },
+    {
+        "name": "modified",
+        "fieldTitle": "平台更新时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "date",
+        "inSearch": true
+    },
+    {
+        "name": "created_at",
+        "fieldTitle": "创建时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "datetime"
+    },
+    {
+        "name": "updated_at",
+        "fieldTitle": "更新时间",
+        "dbType": "timestamp:nullable:useCurrent",
+        "htmlType": "datetime"
+    }
+]

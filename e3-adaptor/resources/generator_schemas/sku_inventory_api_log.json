@@ -1,0 +1,61 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "api_method",
+    "fieldTitle": "请求方法",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "ip",
+    "fieldTitle": "IP",
+    "dbType": "string,15",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "partner",
+    "fieldTitle": "来源",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "平台",
+    "dbType": "string,10",
+    "htmlType": "text"
+  },
+  {
+    "name": "input",
+    "fieldTitle": "请求内容",
+    "dbType": "text",
+    "htmlType": "text"
+  },
+  {
+    "name": "response",
+    "fieldTitle": "响应内容",
+    "dbType": "text",
+    "htmlType": "text"
+  },
+  {
+    "name": "start_at",
+    "fieldTitle": "请求时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime",
+    "inSearch": true
+  },
+  {
+    "name": "end_at",
+    "fieldTitle": "响应时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  }
+]

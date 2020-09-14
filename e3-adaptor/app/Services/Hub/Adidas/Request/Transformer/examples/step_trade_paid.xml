@@ -1,0 +1,24 @@
+<Order EnterpriseCode="EMC1" OrderNo="T790A0019993" DocumentType="0001" Override="Y"
+       PresalePmntNotifyDate="2020-03-18T01:06:10+08:00">
+    <Extn ExtnPresalePmntNotify="Y"/>
+    <OrderLines>
+        <OrderLine PrimeLineNo="1" SubLineNo="1" Action="Modify" OrderedQty="1" Override="Y">
+            <LineCharges>
+                <LineCharge ChargeCategory="TMP_MD_HDR" ChargeName="TMP_MD_HDR" ChargePerLine="30.00"/>
+            </LineCharges>
+        </OrderLine>
+    </OrderLines>
+    <PaymentMethods>
+        <PaymentMethod Action="Modify" Override="Y" PaymentType="PartnerPay" PaymentReference2="EMC1"
+                       PaymentReference1="EMC1">
+            <PaymentDetails TotalCharged="768.00" AuthorizationID="20191109545707336977"
+                            AuthAVS="20191101220045707336977" ChargeType="CHARGE"/>
+        </PaymentMethod>
+    </PaymentMethods>
+    <HeaderCharges>
+        <HeaderCharge ChargeCategory="ShippingCharge" ChargeName="Shipping_Presale" ChargeAmount="0.00"/>
+        <HeaderCharge ChargeCategory="TMP_MD_HDR_PROMO" ChargeName="满399减80" ChargeAmount="30.00">
+            <Extn ExtnPromoId="Tmall$shopPromotionAll-10085872240_981483529**" ExtnCampaignId="满399减80 "/>
+        </HeaderCharge>
+    </HeaderCharges>
+</Order>

@@ -1,0 +1,1 @@
+          <el-input-number v-model="dialogData.$FIELD_NAME$"$VALIDATION_RULES$ name="$FIELD_NAME$" placeholder="$FIELD_TITLE$"/>

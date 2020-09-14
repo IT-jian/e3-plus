@@ -1,0 +1,10 @@
+[program:$WORKER_NAME$-queue]
+process_name=%(program_name)s_%(process_num)02d
+command=$WORKER_COMMAND$
+numprocs=$WORKER_NUMBER$
+autostart=true
+autorestart=true
+startretries=3
+user=$WORKER_USER$
+redirect_stderr=true
+stdout_logfile=$WORKER_LOG$

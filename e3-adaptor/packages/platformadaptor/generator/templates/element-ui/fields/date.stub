@@ -1,0 +1,7 @@
+          <el-date-picker$VALIDATION_RULES$
+            v-model="dialogData.$FIELD_NAME$"
+            name="$FIELD_NAME$"
+            value-format="yyyy-MM-dd" editable
+            type="date"
+            placeholder="选择$FIELD_TITLE$">
+          </el-date-picker>

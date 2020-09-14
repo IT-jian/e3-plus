@@ -1,0 +1,4 @@
+            <el-radio-group v-model="dialogData.$FIELD_NAME$"$VALIDATION_RULES$>
+              <el-radio :label="1">备选项</el-radio>
+              <el-radio :label="2">备选项</el-radio>
+            </el-radio-group>

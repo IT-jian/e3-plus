@@ -1,0 +1,73 @@
+<template>
+  <div class="app-container">
+    <search-table ref="searchTable" :url="url" :params="params" :columns="columns" :form-options="formOptions" :border="true">
+      <template slot="batchButton">
+        <el-button v-if="can('add_$SNAKE_NAME$')" type="success" icon="el-icon-circle-plus-outline" @click.native.prevent="handleAdd()">新增</el-button>
+      </template>
+      <template slot="append">
+        <el-table-column v-if="can('edit_$SNAKE_NAME$') || can('delete_$SNAKE_NAME$')" label="操作" width="120">
+          <template slot-scope="scope">
+            <el-button v-if="can('edit_$SNAKE_NAME$')" type="text" size="small" @click.native.prevent="handleEdit(scope.row)">编辑</el-button>
+            <el-button v-if="can('delete_$SNAKE_NAME$')" type="text" size="small" @click.native.prevent="handleDelete(scope.row)">删除</el-button>
+          </template>
+        </el-table-column>
+      </template>
+    </search-table>
+    <el-dialog :visible.sync="dialogVisible" title="新增/编辑" width="30%" @close="handleCancel()">
+      <el-form ref="dialogForm" :model="dialogData" status-icon size="mini" label-width="80px">
+$FORM_FIELDS$
+      </el-form>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="handleCancel()">取 消</el-button>
+        <el-button v-loading="dialogLoading" type="primary" @click="handleSave()">确 定</el-button>
+      </span>
+    </el-dialog>
+  </div>
+</template>
+
+<script>
+import SearchTable from '@/components/Table/SearchTable'
+import tableAction from '@/views/mixins/searchTableAction'
+import { mapGetters } from 'vuex'
+import { $MODEL_NAME_SNAKE_UPPER_CASE$_LIST } from '@/api/url-variable'
+
+export default {
+  name: '$MODEL_NAME$Index',
+  components: {
+    SearchTable
+  },
+  mixins: [tableAction],
+  data() {
+    return {
+      url: $MODEL_NAME_SNAKE_UPPER_CASE$_LIST,
+      params: {}, // { include: 'admin' },
+      primaryKey: '$PRIMARY_KEY$',
+      dialogLoading: false,
+      dialogVisible: false,
+      dialogData: {},
+      formOptions: {
+        submitBtnText: 'Search',
+        showResetBtn: true,
+        forms: [$SEARCH_FIELDS$
+        ]
+      },
+      columns: [$TABLE_COLUMNS$
+      ]
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'can'
+    ])
+  },
+  mounted() {
+    //
+  },
+  methods: {
+    //
+  }
+}
+</script>
+
+<style lang="css">
+</style>

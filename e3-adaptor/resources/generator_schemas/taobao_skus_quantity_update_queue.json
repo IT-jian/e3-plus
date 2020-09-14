@@ -1,0 +1,82 @@
+[
+    {
+        "name": "id",
+        "fieldTitle": "ID",
+        "dbType": "unsignedBigInteger,true",
+        "primary": true
+    },
+    {
+        "name": "num_iid",
+        "fieldTitle": "商品ID",
+        "dbType": "unsignedBigInteger",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "sku_id",
+        "fieldTitle": "SKU ID",
+        "dbType": "unsignedBigInteger",
+        "htmlType": "text",
+        "inSearch": true,
+        "inIndex": true
+    },
+    {
+        "name": "update_type",
+        "fieldTitle": "更新方式",
+        "dbType": "tinyInteger",
+        "htmlType": "text"
+    },
+    {
+        "name": "sku_version",
+        "fieldTitle": "sku库存版本",
+        "dbType": "unsignedBigInteger",
+        "htmlType": "text"
+    },
+    {
+        "name": "shop_code",
+        "fieldTitle": "商店编码",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "inSearch": true
+    },
+    {
+        "name": "outer_id",
+        "fieldTitle": "外部编码",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "inSearch": true
+    },
+    {
+        "name": "batch_version",
+        "fieldTitle": "更新批次版本",
+        "dbType": "unsignedBigInteger",
+        "htmlType": "text"
+    },
+    {
+        "name": "status",
+        "fieldTitle": "更新状态",
+        "dbType": "tinyInteger",
+        "htmlType": "text",
+        "inIndex": true,
+        "inSearch": true
+    },
+    {
+        "name": "message",
+        "fieldTitle": "信息",
+        "dbType": "json",
+        "htmlType": "text"
+    },
+    {
+        "name": "created_at",
+        "fieldTitle": "创建时间",
+        "dbType": "timestamp:nullable",
+        "htmlType": "datetime"
+    },
+    {
+        "name": "updated_at",
+        "fieldTitle": "更新时间",
+        "dbType": "timestamp:nullable:useCurrent",
+        "htmlType": "datetime"
+    }
+]

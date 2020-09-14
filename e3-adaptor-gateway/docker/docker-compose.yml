@@ -1,0 +1,24 @@
+version: '3'
+services:
+  e3plus-adaptor:
+    image: registry.cn-hangzhou.aliyuncs.com/wuxyyin/adaptor:0.0.1
+    ports:
+      - 8180:8080 #swoole
+      - 8181:8081
+      environment:
+        DB_HOST: "database host"
+        DB_NAME: "database name"
+        DB_USER: "database user"
+        DB_PASS: "database user password"
+        DB_PORT: "database port, default 3306"
+        CACHE_DRIVER: "if redis then redis else file"
+        REDIS_HOST: "redis host"
+        REDIS_PASSWORD: "redis password"
+        REDIS_PORT: "redis port, default 6379"
+        APP_DEBUG: "true" #evn debug
+        APP_URL: "http://localhost:8081" #evn web service url
+      volumes:
+        - /app:/home/adaptor
+        - /etc/timezone:/etc/timezone
+        - /etc/localtime:/etc/localtime
+      restart: always

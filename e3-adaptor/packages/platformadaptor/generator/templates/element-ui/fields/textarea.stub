@@ -1,0 +1,1 @@
+          <el-input v-model="dialogData.$FIELD_NAME$"$VALIDATION_RULES$ :rows="3" name="$FIELD_NAME$" type="textarea" placeholder="$FIELD_TITLE$"/>

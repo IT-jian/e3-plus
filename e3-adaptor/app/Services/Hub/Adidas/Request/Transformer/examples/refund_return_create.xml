@@ -1,0 +1,9 @@
+<Order EnterpriseCode="EMC1" DocumentType="0001" OrderDate="2019-11-06T19:32:02" OrderNo="88888812341245127" EntryType="TMALL">
+    <Extn ExtnStatus="WAIT_SELLER_AGREE" ExtnRefundAmount="389.00" ExtnRefundId="10013866984581399" ExtnSCAC="?" ExtnTrackingNo="1901977334041" ExtnRefundPhase="aftersale" ExtnRefundVersion="1574655490"/>
+    <OrderLines>
+        <OrderLine PrimeLineNo="1" Quantity="1" ReturnReasonCode="?" ReturnReasonText="七天无理由退货">
+            <Extn ExtnCustomerLinePONo="88888812341250127" ExtnCustItemID="2019Q4-IPH67" />
+            <Item ItemID="" />
+        </OrderLine>
+    </OrderLines>
+</Order>

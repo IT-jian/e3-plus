@@ -1,0 +1,17 @@
+<OrderInvoice AdjustmentReason="?" CustomerPONo="153690036429" EntryType="Tmall" RefundFull="?">
+    <Extn  ExtnRefundId="10013866984581399"/>
+    <LineDetails>
+        <LineDetail AdjustmentReason="Compensation" ItemID="" Quantity="">
+            <Extn ExtnCustomerLinePONo=""/>
+            <LineChargeList>
+                <LineCharge ChargeCategory="Appeasement" ChargeName="SpecialEvent" ChargePerLine="20"/>
+            </LineChargeList>
+            <LineTaxList>
+                <LineTax Tax="10.00" />
+            </LineTaxList>
+        </LineDetail>
+    </LineDetails>
+    <HeaderChargeList>
+        <HeaderCharge ChargeAmount="-10.0" ChargeCategory="Appeasement" ChargeName="SpecialEvent"/>
+    </HeaderChargeList>
+</OrderInvoice>

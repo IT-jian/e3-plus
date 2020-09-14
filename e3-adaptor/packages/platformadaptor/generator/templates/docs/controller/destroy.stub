@@ -1,0 +1,8 @@
+/**
+     * Remove the specified $MODEL_LABEL$ from storage.
+     * DELETE /$MODEL_NAME_SNAKE$/{id}
+     *
+     * @param  int $id
+     *
+     * @return mixed
+     */

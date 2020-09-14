@@ -1,0 +1,135 @@
+[
+  {
+    "name": "dispute_id",
+    "fieldTitle": "换货单号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "primary": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "来源平台",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "tid",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "shop_code",
+    "fieldTitle": "商店编码",
+    "dbType": "string,20",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "status",
+    "fieldTitle": "状态",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "refund_phase",
+    "fieldTitle": "申请换货阶段",
+    "dbType": "string,10:nullable:default,''",
+    "htmlType": "text"
+  },
+  {
+    "name": "refund_version",
+    "fieldTitle": "版本号",
+    "dbType": "string,11:nullable:default,''",
+    "htmlType": "text"
+  },
+  {
+    "name": "buyer_name",
+    "fieldTitle": "买家收货人",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "buyer_address",
+    "fieldTitle": "买家收货地址",
+    "dbType": "string:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "buyer_phone",
+    "fieldTitle": "买家联系方式",
+    "dbType": "string,15:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "buyer_logistic_name",
+    "fieldTitle": "买家发货物流公司",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "buyer_logistic_no",
+    "fieldTitle": "买家发货物流单号",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "seller_address",
+    "fieldTitle": "卖家收货地址",
+    "dbType": "string:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "seller_logistic_name",
+    "fieldTitle": "卖家发货物流公司",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "seller_logistic_no",
+    "fieldTitle": "卖家发货物流单号",
+    "dbType": "string,32:nullable:default,''",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "created",
+    "fieldTitle": "申请时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime",
+    "inSearch": true
+  },
+  {
+    "name": "modified",
+    "fieldTitle": "平台更新时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+
+]

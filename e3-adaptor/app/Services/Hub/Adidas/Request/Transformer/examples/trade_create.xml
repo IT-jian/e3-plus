@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><Order EnterpriseCode="EMC1" SellerOrganizationCode="EMC1" EntryType="TMALL" EnteredBy="MarketPlace" OrderDate="2019-11-01T01:06:10+08:00" DocumentType="0001" CustomerPONo="955512341245134" OrderNo="T7GXSX8GY95" CustomerEMailID="test1@adidas.com" ValidateItem="N" PaymentStatus="PAID" OrderType="ShipToHome" >
+    <Extn ExtnSellerFlag="0" ExtnSellerMemo="" ExtnBuyMsg="" ExtnLocaleCode="zh_ZH" ExtnPaymentMethod="ALIPAY" ExtnOrderStatus="NEW" ExtnTaxCalculated="Y" ExtnSellerOrgCode="adidas" ExtnCustPONo="955512341245134"/>
+    <PriceInfo Currency="CNY" EnterpriseCurrency="CNY"/>
+    <HeaderTaxes>
+        <HeaderTax ChargeCategory="ShippingTax" ChargeName="ShippingTax_Presale" TaxName="ShippingTax_Presale" Tax="0.00"/>
+    </HeaderTaxes>
+    <OrderLines>
+        <OrderLine PrimeLineNo="1" OrderedQty="1" LineType="Presale" SCAC="SF" CarrierServiceCode="STRD">
+            <Extn ExtnCustomerLinePONo="9544412341245134" ExtnEAN="4060516274308" ExtnCustItemID="B37947"/>
+            <Item UPCCode="" ItemDesc="" ItemID="" ProductClass="NEW" UnitOfMeasure="PIECE"/>
+            <LinePriceInfo PricingUOM="PIECE" IsPriceLocked="Y" UnitPrice="500.00" ListPrice="500.00" RetailPrice="500.00" TaxableFlag="Y"/>
+            <PersonInfoShipTo State="HN" AddressLine5="湖南省" City="郴州市" AddressLine1="珠泉镇嘉禾县中医院门诊6楼" AddressLine3="嘉禾县" Country="CN" EMailID="test1@adidas.com" FirstName="阿迪达斯02" MiddleName="" LastName="" ZipCode="424500" DayPhone="18811111111"/>
+            <LineTaxes>
+                <LineTax ChargeCategory="LineTax" ChargeName="OrderLineTax" TaxName="OrderLineTax" Tax="0.00"/>
+            </LineTaxes>
+            <LineCharges>
+                <LineCharge ChargeCategory="TMP_MD_LINE" ChargeName="TMP_MD_LINE" ChargePerLine="290.00"/>
+                <LineCharge ChargeCategory="TMP_MD_HDR" ChargeName="TMP_MD_HDR" ChargePerLine="86.66"/>
+            </LineCharges>
+        </OrderLine>
+    </OrderLines>
+    <PersonInfoBillTo State="HN" AddressLine5="湖南省" City="郴州市" AddressLine1="珠泉镇嘉禾县中医院门诊6楼" AddressLine3="嘉禾县" Country="CN" EMailID="test1@adidas.com" FirstName="阿迪达斯02" MiddleName="" LastName="" ZipCode="424500" DayPhone="18811111111"/>
+    <PaymentMethods>
+        <PaymentMethod PaymentType="PartnerPay" PaymentReference2="EMC1" PaymentReference1="EMC1">
+            <PaymentDetails RequestAmount="123.34" AuthorizationID="2019110122001239545707336977" AuthAVS="2019110122001239545707336977"/>
+        </PaymentMethod>
+    </PaymentMethods>
+    <HeaderCharges>
+        <HeaderCharge ChargeCategory="ShippingCharge" ChargeName="Shipping_Presale" ChargeAmount="00.00"/>
+    </HeaderCharges>
+    <PersonInfoShipTo State="HN" AddressLine5="湖南省" City="郴州市" AddressLine1="珠泉镇嘉禾县中医院门诊6楼" AddressLine3="嘉禾县" Country="CN" EMailID="test1@adidas.com" FirstName="阿迪达斯02" MiddleName="" LastName="" ZipCode="424500" DayPhone="18811111111"/>
+</Order>
+

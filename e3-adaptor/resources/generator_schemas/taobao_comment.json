@@ -1,0 +1,64 @@
+[
+  {
+    "name": "tid",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "oid",
+    "fieldTitle": "子交易号",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "num_iid",
+    "fieldTitle": "商品数字ID",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "seller_nick",
+    "fieldTitle": "平台店铺",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "created",
+    "fieldTitle": "创建时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "origin_content",
+    "fieldTitle": "原始报文",
+    "dbType": "mediumText",
+    "htmlType": "text"
+  },
+  {
+    "name": "sync_status",
+    "fieldTitle": "转入状态",
+    "dbType": "unsignedTinyInteger:default,0:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

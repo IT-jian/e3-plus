@@ -1,0 +1,8 @@
+/**
+     * Store a newly created $MODEL_LABEL$ in storage.
+     * POST /$MODEL_NAME_SNAKE$
+     *
+     * @param Request $request
+     *
+     * @return mixed
+     */

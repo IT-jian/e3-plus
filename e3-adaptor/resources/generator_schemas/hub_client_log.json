@@ -1,0 +1,68 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "api_method",
+    "fieldTitle": "请求方法",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "app_name",
+    "fieldTitle": "请求来源",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "url",
+    "fieldTitle": "请求地址",
+    "dbType": "string,255",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "input",
+    "fieldTitle": "请求内容",
+    "dbType": "text",
+    "htmlType": "text"
+  },
+  {
+    "name": "response",
+    "fieldTitle": "响应内容",
+    "dbType": "text",
+    "htmlType": "text"
+  },
+  {
+    "name": "status_code",
+    "fieldTitle": "响应状态码",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "message",
+    "fieldTitle": "信息",
+    "dbType": "string,255",
+    "htmlType": "text"
+  },
+  {
+    "name": "start_at",
+    "fieldTitle": "请求时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime",
+    "inSearch": true
+  },
+  {
+    "name": "end_at",
+    "fieldTitle": "响应时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  }
+]

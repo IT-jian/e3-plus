@@ -1,0 +1,82 @@
+<?php
+
+$adaptorConfig = config('adaptor.adaptors.' . config('adaptor.default', 'taobao'), []);
+$environments = data_get($adaptorConfig, 'horizon_environments', []);
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Horizon Redis Connection
+    |--------------------------------------------------------------------------
+    |
+    | This is the name of the Redis connection where Horizon will store the
+    | meta information required for it to function. It includes the list
+    | of supervisors, failed jobs, job metrics, and other information.
+    |
+    */
+
+    'use' => 'default',
+
+    'middleware' => [
+        'cors', 'operate_log', 'auth',
+    ],
+    /*
+    |--------------------------------------------------------------------------
+    | Horizon Redis Prefix
+    |--------------------------------------------------------------------------
+    |
+    | This prefix will be used when storing all Horizon data in Redis. You
+    | may modify the prefix when you are running multiple installations
+    | of Horizon on the same server so that they don't have problems.
+    |
+    */
+
+    'prefix' => env('HORIZON_PREFIX', 'horizon:'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Queue Wait Time Thresholds
+    |--------------------------------------------------------------------------
+    |
+    | This option allows you to configure when the LongWaitDetected event
+    | will be fired. Every connection / queue combination may have its
+    | own, unique threshold (in seconds) before this event is fired.
+    |
+    */
+
+    'waits' => [
+        'redis:default'          => 60,
+        'redis:sys_std_push_hub' => 60, // 推送
+        'redis:taobao_download'  => 60, // 下载
+        'redis:taobao_transfer'  => 60, // 转入
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Job Trimming Times
+    |--------------------------------------------------------------------------
+    |
+    | Here you can configure for how long (in minutes) you desire Horizon to
+    | persist the recent and failed jobs. Typically, recent jobs are kept
+    | for one hour while all failed jobs are stored for an entire week.
+    |
+    */
+
+    'trim' => [
+        'recent' => 60,
+        'failed' => 10080,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Queue Worker Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define the queue worker settings used by your application
+    | in all environments. These supervisors and settings handle all your
+    | queued jobs and will be provisioned by Horizon during deployment.
+    |
+    */
+
+    'environments' => $environments,
+];

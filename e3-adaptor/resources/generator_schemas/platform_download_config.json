@@ -1,0 +1,72 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "平台",
+    "dbType": "string,10",
+    "htmlType": "text"
+  },
+  {
+    "name": "code",
+    "fieldTitle": "编码",
+    "dbType": "string,50",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "name",
+    "fieldTitle": "名称",
+    "dbType": "string,50",
+    "inSearch": true,
+    "inForm": true,
+    "inIndex": true
+  },
+  {
+    "name": "stop_download",
+    "fieldTitle": "停止下载",
+    "dbType": "unsignedTinyInteger:default,1",
+    "htmlType": "text",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "query_page_size",
+    "fieldTitle": "单次查询数量",
+    "dbType": "integer",
+    "htmlType": "text",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "job_page_size",
+    "fieldTitle": "单个任务批数量",
+    "dbType": "integer",
+    "htmlType": "text",
+    "inForm": true,
+    "inSearch": true
+  },
+  {
+    "name": "next_query_at",
+    "fieldTitle": "下次查询开始时间",
+    "dbType": "integer",
+    "htmlType": "text"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "创建时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

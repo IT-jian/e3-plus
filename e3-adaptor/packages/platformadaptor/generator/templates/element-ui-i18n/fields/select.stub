@@ -1,0 +1,6 @@
+          <el-select v-model="dialogData.$FIELD_NAME$"$VALIDATION_RULES$ :placeholder="translate('$FIELD_NAME$')" name="$FIELD_NAME$">
+            <el-option v-for="(option, optionIndex) in $FIELD_NAME$Options" :key="optionIndex"
+            :label="typeof option === 'object' ? option.label : option"
+            :value="typeof option === 'object' ? option.value : optionIndex">
+            </el-option>
+          </el-select>

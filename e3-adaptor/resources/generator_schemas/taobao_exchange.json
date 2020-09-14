@@ -1,0 +1,53 @@
+[
+  {
+    "name": "dispute_id",
+    "fieldTitle": "换货单号",
+    "dbType": "unsignedBigInteger",
+    "primary": true
+  },
+  {
+    "name": "seller_nick",
+    "fieldTitle": "平台店铺",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "biz_order_id",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "status",
+    "fieldTitle": "状态",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "origin_content",
+    "fieldTitle": "原始报文",
+    "dbType": "json:nullable",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "origin_created",
+    "fieldTitle": "报文创建时间",
+    "dbType": "unsignedInteger:nullable",
+    "htmlType": "date",
+    "inSearch": true
+  },
+  {
+    "name": "origin_modified",
+    "fieldTitle": "报文更新时间",
+    "dbType": "unsignedInteger:nullable",
+    "htmlType": "date",
+    "inSearch": true
+  }
+]

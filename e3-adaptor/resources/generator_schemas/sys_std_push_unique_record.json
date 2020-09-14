@@ -1,0 +1,36 @@
+[
+  {
+    "name": "bis_id",
+    "fieldTitle": "业务ID",
+    "dbType": "string,50",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "平台",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "method",
+    "fieldTitle": "类型",
+    "dbType": "string,50",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "创建时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

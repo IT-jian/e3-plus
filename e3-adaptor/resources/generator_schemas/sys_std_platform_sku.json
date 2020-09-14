@@ -1,0 +1,75 @@
+[
+  {
+    "name": "platform",
+    "fieldTitle": "来源平台",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "shop_code",
+    "fieldTitle": "商店编码",
+    "dbType": "string,20",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "sku_id",
+    "fieldTitle": "SKU ID",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "goods_id",
+    "fieldTitle": "商品ID",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "goods_name",
+    "fieldTitle": "商品名称",
+    "dbType": "string,64",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "outer_id",
+    "fieldTitle": "商家外部编码",
+    "dbType": "unsignedBigInteger",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "num",
+    "fieldTitle": "数量",
+    "dbType": "integer",
+    "htmlType": "text"
+  },
+  {
+    "name": "price",
+    "fieldTitle": "金额",
+    "dbType": "decimal,8,2:nullable"
+  },
+  {
+    "name": "is_delete",
+    "fieldTitle": "已删除",
+    "dbType": "unsignedTinyInteger:nullable:default,0"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]

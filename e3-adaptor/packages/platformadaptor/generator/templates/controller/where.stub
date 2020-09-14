@@ -1,0 +1,3 @@
+        if ($$FIELD_NAME_CAMEL$ = $request->get('$FIELD_NAME$')) {
+            $where['$FIELD_NAME$'] = $$FIELD_NAME_CAMEL$;
+        }

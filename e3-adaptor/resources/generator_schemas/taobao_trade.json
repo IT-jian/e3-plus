@@ -1,0 +1,53 @@
+[
+  {
+    "name": "tid",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedInteger",
+    "primary": true
+  },
+  {
+    "name": "seller_nick",
+    "fieldTitle": "平台店铺",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "status",
+    "fieldTitle": "订单状态",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "type",
+    "fieldTitle": "订单类型",
+    "dbType": "string,32",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "origin_content",
+    "fieldTitle": "原始报文",
+    "dbType": "mediumText",
+    "htmlType": "text",
+    "inIndex": true
+  },
+  {
+    "name": "origin_created",
+    "fieldTitle": "报文创建时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "date",
+    "inSearch": true
+  },
+  {
+    "name": "origin_modified",
+    "fieldTitle": "报文更新时间",
+    "dbType": "unsignedInteger",
+    "htmlType": "date",
+    "inSearch": true
+  }
+]

@@ -1,0 +1,7 @@
+/**
+     * Display a listing of the $MODEL_LABEL$.
+     * GET|HEAD /$MODEL_NAME_SNAKE$
+     *
+     * @param Request $request
+     * @return mixed
+     */

@@ -1,0 +1,9 @@
+/**
+     * Update the specified $MODEL_LABEL$ in storage.
+     * PUT/PATCH /$MODEL_NAME_SNAKE$/{id}
+     *
+     * @param  int $id
+     * @param Request $request
+     *
+     * @return mixed
+     */

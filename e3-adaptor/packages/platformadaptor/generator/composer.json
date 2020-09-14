@@ -1,0 +1,40 @@
+{
+  "name": "platformadaptor/generator",
+  "description": "lumen element-ui generators scaffold.",
+  "keywords": [
+    "lumen",
+    "generators",
+    "scaffold",
+    "element-ui"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "linzi",
+      "email": "lin7785230@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "PlatformAdaptor\\Generator\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "\\PlatformAdaptor\\Generator\\GeneratorsServiceProvider"
+      ]
+    }
+  }
+}

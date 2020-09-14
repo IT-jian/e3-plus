@@ -1,0 +1,7 @@
+// $MODEL_LABEL$路由
+$router->get('$MODEL_NAME_SNAKE$', ['middleware' => 'permission:view_$MODEL_NAME_SNAKE$', 'uses' => '$MODEL_NAME$Controller@index']);
+$router->post('$MODEL_NAME_SNAKE$', ['middleware' => 'permission:add_$MODEL_NAME_SNAKE$', 'uses' => '$MODEL_NAME$Controller@store']);
+$router->get('$MODEL_NAME_SNAKE$/{$MODEL_NAME_PLURAL_SNAKE$}', ['middleware' => 'permission:view_$MODEL_NAME_SNAKE$', 'uses' => '$MODEL_NAME$Controller@show']);
+$router->put('$MODEL_NAME_SNAKE$/{$MODEL_NAME_PLURAL_SNAKE$}', ['middleware' => 'permission:edit_$MODEL_NAME_SNAKE$', 'uses' => '$MODEL_NAME$Controller@update']);
+$router->patch('$MODEL_NAME_SNAKE$/{$MODEL_NAME_PLURAL_SNAKE$}', ['middleware' => 'permission:edit_$MODEL_NAME_SNAKE$', 'uses' => '$MODEL_NAME$Controller@update']);
+$router->delete('$MODEL_NAME_SNAKE$/{$MODEL_NAME_PLURAL_SNAKE$}', ['middleware' => 'permission:delete_$MODEL_NAME_SNAKE$', 'uses' => '$MODEL_NAME$Controller@destroy']);

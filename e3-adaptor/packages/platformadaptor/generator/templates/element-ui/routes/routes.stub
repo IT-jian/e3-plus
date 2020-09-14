@@ -1,0 +1,7 @@
+    },
+    {
+      path: '$MODEL_NAME_SNAKE$',
+      name: '$MODEL_NAME$Index',
+      component: () => import('@/views/admin/$MODEL_NAME_SNAKE$/index'),
+      meta: { title: '$MODEL_LABEL$列表', permissions: ['view_$MODEL_NAME_SNAKE$'] }
+    }

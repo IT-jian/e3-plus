@@ -1,0 +1,195 @@
+[
+  {
+    "name": "tid",
+    "fieldTitle": "交易号",
+    "dbType": "unsignedBigInteger",
+    "inSearch": true,
+    "primary": true
+  },
+  {
+    "name": "shop_code",
+    "fieldTitle": "商店编码",
+    "dbType": "string,20",
+    "htmlType": "text",
+    "inSearch": true,
+    "inIndex": true
+  },
+  {
+    "name": "total_fee",
+    "fieldTitle": "商品金额",
+    "dbType": "decimal,10,2",
+    "htmlType": "text"
+  },
+  {
+    "name": "discount_fee",
+    "fieldTitle": "优惠金额",
+    "dbType": "decimal,10,2",
+    "htmlType": "text"
+  },
+  {
+    "name": "payment",
+    "fieldTitle": "支付金额",
+    "dbType": "decimal,10,2",
+    "htmlType": "text"
+  },
+  {
+    "name": "pay_type",
+    "fieldTitle": "支付类型",
+    "dbType": "string,32:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "pay_status",
+    "fieldTitle": "支付状态",
+    "dbType": "string,20:nullable:default,PAID",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "post_fee",
+    "fieldTitle": "邮费",
+    "dbType": "decimal,10,2:nullable:default,0.00",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_name",
+    "fieldTitle": "收件人",
+    "dbType": "string,50",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_country",
+    "fieldTitle": "收件人国家",
+    "dbType": "string,20:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_state",
+    "fieldTitle": "收件人省份",
+    "dbType": "string,50",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_city",
+    "fieldTitle": "收件人市",
+    "dbType": "string,50:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_district",
+    "fieldTitle": "收件人区",
+    "dbType": "string,50:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_town",
+    "fieldTitle": "收件人街道",
+    "dbType": "string,50:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_address",
+    "fieldTitle": "收件人详细地址",
+    "dbType": "string,255",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_zip",
+    "fieldTitle": "收件人邮编",
+    "dbType": "string,10:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_mobile",
+    "fieldTitle": "手机",
+    "dbType": "string,20:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "receiver_phone",
+    "fieldTitle": "收件人电话",
+    "dbType": "string,50:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "status",
+    "fieldTitle": "交易状态",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "type",
+    "fieldTitle": "交易类型",
+    "dbType": "string,20:nullable:default,fixed",
+    "htmlType": "text"
+  },
+  {
+    "name": "buyer_nick",
+    "fieldTitle": "买家昵称",
+    "dbType": "string,255:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "seller_flag",
+    "fieldTitle": "卖家备注旗帜",
+    "dbType": "tinyInt:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "seller_memo",
+    "fieldTitle": "卖家留言",
+    "dbType": "string,255:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "buyer_message",
+    "fieldTitle": "买家留言",
+    "dbType": "string,255:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "step_trade_status",
+    "fieldTitle": "分阶段付款状态",
+    "dbType": "string,32:nullable",
+    "htmlType": "text"
+  },
+  {
+    "name": "step_paid_fee",
+    "fieldTitle": "分阶段付款金额",
+    "dbType": "decimal,10,2:nullable:default,0.00",
+    "htmlType": "text"
+  },
+  {
+    "name": "pay_time",
+    "fieldTitle": "支付时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "created",
+    "fieldTitle": "下单时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime",
+    "inSearch": true
+  },
+  {
+    "name": "modified",
+    "fieldTitle": "淘宝更新时间",
+    "dbType": "datetime:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+
+]

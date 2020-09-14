@@ -1,0 +1,49 @@
+[
+  {
+    "name": "id",
+    "fieldTitle": "ID",
+    "dbType": "integer,true",
+    "primary": true
+  },
+  {
+    "name": "name",
+    "fieldTitle": "测试",
+    "dbType": "string,50",
+    "htmlType": "text",
+    "validations": "required",
+    "inSearch": true
+  },
+  {
+    "name": "platform",
+    "fieldTitle": "测试",
+    "dbType": "string,10",
+    "htmlType": "text",
+    "validations": "required",
+    "inSearch": true
+  },
+  {
+    "name": "last_time",
+    "fieldTitle": "下载时间",
+    "dbType": "string,11",
+    "htmlType": "text",
+    "inSearch": true
+  },
+  {
+    "name": "desc",
+    "fieldTitle": "描述",
+    "dbType": "text:nullable",
+    "htmlType": "textarea"
+  },
+  {
+    "name": "created_at",
+    "fieldTitle": "下载时间",
+    "dbType": "timestamp:nullable",
+    "htmlType": "datetime"
+  },
+  {
+    "name": "updated_at",
+    "fieldTitle": "更新时间",
+    "dbType": "timestamp:nullable:useCurrent",
+    "htmlType": "datetime"
+  }
+]
